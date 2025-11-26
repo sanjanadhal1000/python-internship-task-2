@@ -1,0 +1,64 @@
+Title: A/B Statistical Analysis on Zomato Restaurant Ratings
+
+1. Introduction
+
+    The purpose of this project is to compare two groups in the Zomato dataset to see if there is a statistical difference in restaurant ratings.
+    In this study, the two groups compared are:
+
+    Restaurants with online delivery
+
+    Restaurants without online delivery
+
+    The goal is to check whether online delivery impacts restaurant ratings.
+
+2. Problem Statement
+
+    We want to test:
+
+    “Is there a significant difference between average ratings of restaurants that offer online delivery vs those that don’t?”
+
+3. Hypotheses
+
+    Null Hypothesis (H₀):
+        There is no difference in mean ratings between the two groups.
+        μ₁ = μ₂
+
+    Alternative Hypothesis (H₁):
+        There is a difference in mean ratings between the two groups.
+        μ₁ ≠ μ₂
+
+4. Methodology
+
+    Two-sample independent t-test (Welch’s test)
+
+    Significance level α = 0.05
+
+    Tools used: Python, Pandas, SciPy
+
+Groups:
+
+    Group A: Restaurants with online delivery
+
+    Group B: Restaurants without online delivery
+
+5. Results
+
+    === T-Test Results ===
+        T-statistic: 30.29
+        P-value: 0.0
+        Degrees of freedom: 8198.32
+
+    === Group Means ===
+        Mean Rating (Online Delivery): 3.25
+        Mean Rating (No Delivery): 2.47
+
+6. Conclusion
+
+    If p-value < 0.05:
+
+    We reject the null hypothesis.
+    There is a statistically significant difference in restaurant ratings between restaurants offering online delivery and those that do not.
+
+7. Visualizations
+
+    View output_plot.png 
