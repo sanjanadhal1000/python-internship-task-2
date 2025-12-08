@@ -1,0 +1,2 @@
+Linear Regression MSE: 0.5559, R2: 0.5758
+Random Forest MSE: 0.2554, R2: 0.8051
